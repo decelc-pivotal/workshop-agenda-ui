@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <div th:include="components/header"></div>
-   
+
   <body role="document" style="min-height:100%;">
 	<div th:include="components/nav"></div>
 
 		<main role="main">
 			<div class="row">
-			
+
 				<div class="pane bg-dark-2">
 					<div class="container" style="width:95%;">
 						<h1 class="type-neutral-11 title"><span th:text="${workshop.title}">Title</span></h1>
-						<p class="type-brand-8"> 
-							<span th:text="${workshop.date}" style="font-size: xx-large;">Date</span> 
-						</p>	
+						<p class="type-brand-8">
+							<span th:text="${workshop.date}" style="font-size: xx-large;">Date</span>
+						</p>
 						<img th:src="${workshop.customerLogo}" />
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="row doc-main">
 		    	<div class="container">
-		    	
-			    	<div style="width:25%; display: inline-block; vertical-align: top">	
+
+			    	<div style="width:25%; display: inline-block; vertical-align: top">
 					<img th:src="@{/images/rocket.png}"></img>
-						
+
 					<div class="h3">Instructors</div>
 				    		<p th:each="instructor,iterationStatus  : ${instructors}">
 			        			<span th:text="${instructor.name}">Name</span><br></br>
 			        			<span th:text="${instructor.title}">Title</span><br></br>
 			        			<a th:href="${'mailto:' + instructor.email}" th:text="${instructor.email}">Email</a><br></br>
-			        			<a th:href="${'tel:' + instructor.phone}" th:text="${instructor.phone}">Phone</a><br></br>            
+			        			<a th:href="${'tel:' + instructor.phone}" th:text="${instructor.phone}">Phone</a><br></br>
 			      		</p>
 					</div>
-					
+
 					<div style="width:68%; position: relative; display: inline-block; vertical-align: middle; margin-left: 50px;">
-						<div class="h4">
-							Pivotal’s hands on workshops will introduce you to key concepts in modern application design with Pivotal Cloud Foundry, Spring Boot and Spring Cloud.
-							With expert guidance, you will:
-						</div>
-						<ul>
-							<li>Learn Pivotal Cloud Foundry concepts and deploy applications to cloud foundry and learn to employ DevOps practices such as shared responsibility, short iterations, and continuous delivery</li>
-							<li>Cover the key operational topics you’ll need to know to confidently run your own microservice applications.</li>
-							<li>Get a hands on introduction to microservice architectures and application development.</li>
-							<li>Cover key concepts of architecting and running machine learning systems using Spring Cloud Data flow and Pivotal Cloud Foundry services.</li>
-						</ul>
+            <span th:utext="${workshop.description}" />
 					</div>
-		      			
+
 				</div>
 			</div>
 		</main>
