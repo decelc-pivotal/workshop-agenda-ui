@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <div th:include="components/header"></div>
-   
+
   <body role="document" style="min-height:100%;">
 	<div th:include="components/nav"></div>
 
@@ -14,20 +14,12 @@
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="row doc-main">
 		    	<div class="container">
-		    	
-			    	<div style="width:25%; display: inline-block; vertical-align: top">	
+
+			    	<div style="width:25%; display: inline-block; vertical-align: top">
 					<img th:src="@{/images/rocket.png}"></img>
-					
-					
-					<!-- <div class="h3">Instructors</div>
-				    		<p th:each="instructor,iterationStatus  : ${instructors}">
-			        			<span th:text="${instructor.name}">Name</span><br></br>
-			        			<span th:text="${instructor.title}">Title</span><br></br>
-			        			<a th:href="${'mailto:' + instructor.email}" th:text="${instructor.email}">Email</a><br></br>
-			      		</p> -->
 					</div>  
 					
 	
@@ -52,6 +44,11 @@
 							Showcase completed integrations and connect with other Pivotal partners, Pivotal’s Sales and Alliances team, and early access customers. Publish completed integrations to the Pivotal Network and share them with Pivotal customers.
 						</div>
 					</div>	
+
+					<div style="width:68%; position: relative; display: inline-block; vertical-align: middle; margin-left: 50px;">
+            <span th:utext="${workshop.description}" />
+					</div>
+
 				</div>
 			</div>
 		</main>
