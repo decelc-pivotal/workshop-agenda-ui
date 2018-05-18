@@ -6553,6 +6553,9 @@ a {
 
 .bg-dark-2 {
   background-color: #243641 !important; }
+  
+.bg-mint-2 {
+  background-color: #a4dad8 !important; }
 
 .bg-dark-3 {
   background-color: #3D4A51 !important; }
@@ -7506,8 +7509,8 @@ a {
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.14); }
 
 .pane > .container {
-  padding-top: 35px;
-  padding-bottom: 35px; }
+  /* padding-top: 35px; */
+  /* padding-bottom: 35px; */ }
 
 .pane-offset .pane-image {
   text-align: center;
@@ -7519,8 +7522,8 @@ a {
 
 @media (min-width: 768px) {
   .pane > .container {
-    padding-top: 45px;
-    padding-bottom: 45px; }
+    /* padding-top: 45px; */
+    /* padding-bottom: 45px;*/ }
   .pane-offset .pane-image {
     margin-bottom: -90px; }
   .pane-offset + .pane .container {
@@ -7528,8 +7531,8 @@ a {
 
 @media (min-width: 992px) {
   .pane > .container {
-    padding-top: 60px;
-    padding-bottom: 60px; }
+    /* padding-top: 60px; */
+    /* padding-bottom: 60px; */ }
   .pane-offset .pane-image {
     margin-bottom: -120px; }
   .pane-offset + .pane .container {

@@ -15,13 +15,13 @@
 		<div th:each="topic,iterationStatus  : ${dailyContent.topics}">
 			<div>
     			<div style="float:left;">
-    				<span style="font-weight: bold; color: #04756F; font-size:28px" th:if="${#strings.isEmpty(topic.labURL) and #strings.isEmpty(topic.slideURL) and topic.id != 'emptysession'}" th:text="${topic.title}">title</span>
+    				<span style="color: #04756F; font-size:22px" th:if="${#strings.isEmpty(topic.labURL) and #strings.isEmpty(topic.slideURL) and topic.id != 'emptysession'}" th:text="${topic.title}">title</span>
        				<span th:if="${not #strings.isEmpty(topic.labURL) or not #strings.isEmpty(topic.slideURL) or topic.id == 'emptysession'}" th:text="${topic.title}">title</span><br th:if="${not #strings.isEmpty(topic.title)}"></br>
        				<span th:text="${topic.description}" th:if="${not #strings.isEmpty(topic.description)}">description</span>
     			</div> <br th:if="${not #strings.isEmpty(topic.description)}"></br>
         		<div style="float:right;"> 
           			<a th:href="${topic.slideURL}" target="_blank" class="tag-item label label-primary mlm" th:if="${not #strings.isEmpty(topic.slideURL) and topic.id != 'emptysession'}">slides</a>
-          			<a th:href="${topic.labURL}" target="_blank" class="tag-item label label-primary" th:if="${not #strings.isEmpty(topic.labURL) and topic.id != 'emptysession'}">labs</a>  
+          			<a th:href="${topic.labURL}" target="_blank" class="tag-item label label-primary" th:if="${not #strings.isEmpty(topic.labURL) and topic.id != 'emptysession'}">labs</a>
     			</div>
   			</div><br/> 
 

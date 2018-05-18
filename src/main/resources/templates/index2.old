@@ -9,8 +9,8 @@
 			<div class="row">
 				<div class="pane bg-mint-2">
 					<div class="container" style="width:100%;">
-						<img th:src="@{/images/pd_chicago.png}"/>  
-						<!-- <img th:src="@{/images/pks_banner.png}"/> -->
+						<!-- <img th:src="@{/images/partner_days1.png}"/>  -->
+						<img th:src="@{/images/pks_banner.png}"/>
 					</div>
 				</div>
 			</div>
@@ -22,13 +22,13 @@
 					<img th:src="@{/images/rocket.png}"></img>
 					
 					
-					<!-- <div class="h3">Instructors</div>
+					<div class="h3">Instructors</div>
 				    		<p th:each="instructor,iterationStatus  : ${instructors}">
 			        			<span th:text="${instructor.name}">Name</span><br></br>
 			        			<span th:text="${instructor.title}">Title</span><br></br>
 			        			<a th:href="${'mailto:' + instructor.email}" th:text="${instructor.email}">Email</a><br></br>
-			      		</p> -->
-					</div>  
+			      		</p>
+					</div>
 					
 	
 					

@@ -2,13 +2,13 @@
 instances: 1
 memory: 1024M
 applications:
-- name: workshop-agenda-ui
-  host: workshop-agenda-ui
+- name: partner-days-ui
+  host: partner-days-ui
   path: target/workshop-agenda-ui-0.0.1-SNAPSHOT.jar
+  timeout: 180
   services:
   - service-registry
   - circuit-breaker
 env:
   SPRING_PROFILES_ACTIVE: pcf
-  CF_TARGET: https://api.run.haas-67.pez.pivotal.io
-
+  CF_TARGET: https://api.run.pivotal.io

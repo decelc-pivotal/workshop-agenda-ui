@@ -1,20 +1,10 @@
 <div class="doc-sidebar" style="width:30%; margin-top:0; float:right; padding:10px;">
 	<div class="sidebar-module">
 		<h4 class="type-brand-3">Resources</h4>
-    	<div class="tag-box bg-dark-11" style="padding:10px; margin:20px;">
-    		<ul th:each="resource,iterationStatus : ${resources}" class="list-unstyled">
-    			<li><a target="_blank" th:href="${resource.url}" th:text="${resource.title}">url</a></li>						
-    		</ul>
+    		<div class="tag-box bg-dark-11" style="padding:10px; margin:20px;">
+	    		<ul th:each="resource,iterationStatus : ${resources}" class="list-unstyled">
+	    			<li><a target="_blank" th:href="${resource.url}" th:text="${resource.title}">url</a></li>						
+	    		</ul>
   		</div>
-  		
-		<div class="tag-box bg-dark-11" style="padding:10px; margin:20px;">
-			<h4 class="type-brand-3">Books</h4>
-		   		<ul class="list-unstyled">
-		    		<li><a target="_blank" href="https://workshop-content.cfapps.io/books/Beyond_the_12-Factor_App_Pivotal.pdf">Beyond the 12-Factor App</a><p></p></li>	
-		    		<li><a target="_blank" href="https://workshop-content.cfapps.io/books/Migrating_to_Cloud-Native_App_Architectures_Pivotal.pdf">Migrating to Cloud Native Application Architectures</a><p></p></li>	
-		    		<li><a target="_blank" href="https://workshop-content.cfapps.io/books/Cloud_Foundry_The_Cloud_Native_Platform_Pivotal.pdf">Cloud Foundry The Cloud Native Platform</a><p></p></li>	
-		    		<li><a target="_blank" href="http://www.amazon.com/Cloud-Native-Java-Designing-Resilient/dp/1449374646">Cloud Native Java: Designing Resilient Systems with Spring Boot, Spring Cloud, and Cloud Foundry</a><p></p></li>	
-			</ul>
-		</div>	
 	</div>
 </div> 

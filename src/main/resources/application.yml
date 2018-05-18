@@ -1,25 +1,12 @@
-server:
-  port: 8989
-
-eureka:
-  client:
-    registryFetchIntervalSeconds: 5
 
 ribbon:
   IsSecure: false
 
-workshop:
-  ribbon:
-    ServerListRefreshInterval: 5000
 
 security:
-  basic:
-    enabled: false
-
-management:
-  security:
-    enabled: false
-
+  user:
+    name: pd
+    password: keepitsimple1
 
 ---
 
@@ -37,7 +24,7 @@ hystrix:
 
 workshop:
   ribbon:
-    listOfServers: localhost:8007
+    listOfServers: localhost:8080
    
   
       

@@ -5,10 +5,10 @@ applications:
 - name: workshop-agenda-ui
   host: workshop-agenda-ui
   path: target/workshop-agenda-ui-0.0.1-SNAPSHOT.jar
+  timeout: 180
   services:
   - service-registry
   - circuit-breaker
 env:
   SPRING_PROFILES_ACTIVE: pcf
   CF_TARGET: https://api.run.pivotal.io
-

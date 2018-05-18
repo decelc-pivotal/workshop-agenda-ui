@@ -8,7 +8,7 @@
 	
 	<div class="pane bg-dark-2">
 		<div class="container">
-			<h2 class="type-neutral-11 title">Enablement Courses</h2>
+			<h2 class="type-neutral-11 title">CJD Courses</h2>
 			<p></p>
 		</div>
 	</div>
@@ -30,8 +30,8 @@
         <td th:text="${content.title}">title</td>
        	<td th:text="${content.section}">section</td>
        	<td th:text="${content.description}">description</td>
-        <td th:text="${content.slideURL}">slideURL</td>
-        <td th:text="${content.labURL}">labURL</td>
+       	<td><a th:if="${not #strings.isEmpty(content.slideURL)}" th:href="${'https://workshop-content.cfapps.io/' + content.slideURL}" target="_blank" class="tag-item label label-primary mlm" >slides</a></td>
+        <td><a th:if="${not #strings.isEmpty(content.labURL)}" th:href="${'https://workshop-content.cfapps.io/' + content.labURL}" target="_blank" class="tag-item label label-primary">labs</a></td>
   	</tr>
 </table>
 </main>
@@ -40,4 +40,3 @@
  
 </body>
 </html>
-
