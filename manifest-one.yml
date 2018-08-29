@@ -1,0 +1,9 @@
+---
+applications:
+- name: partner-days-ui
+  host: cjd-ui
+  path: target/workshop-agenda-ui-0.0.1-SNAPSHOT.jar
+  timeout: 180
+  services:
+  - service-registry
+  - circuit-breaker
